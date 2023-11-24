@@ -41,8 +41,21 @@ meme interseccion_genespromotores.fasta -dna -oc interseccion_0 -mod anr -nmotif
 meme interseccion_genespromotores.fasta -dna -oc interseccion_1 -mod anr -nmotifs 5 -minw 4 -maxw 20 -revcomp -bfile background_1
 meme interseccion_genespromotores.fasta -dna -oc interseccion_2 -mod anr -nmotifs 5 -minw 4 -maxw 20 -revcomp -bfile background_2
 meme interseccion_genespromotores.fasta -dna -oc interseccion_3 -mod anr -nmotifs 5 -minw 4 -maxw 20 -revcomp -bfile background_3
+meme Intersecção_faire.fasta -dna -oc Faire_1 -mod anr -nmotifs 5 -minw 4 -maxw 20 -objfun classic -revcomp -bfile background_1
+meme Intersecção_faire.fasta -dna -oc Faire_2 -mod anr -nmotifs 5 -minw 4 -maxw 20 -objfun classic -revcomp -bfile background_2
+meme Intersecção_faire.fasta -dna -oc Faire_3 -mod anr -nmotifs 5 -minw 4 -maxw 20 -objfun classic -revcomp -bfile background_3
 ```
-Cada um irá produzir uma pasta nova que dentro dela possuiu um arquivo HTML que abre a pagina do meme com os resultados dentro dela, dentro dela é possivel visulizar os motifs encontrados dentro das sequencias.
+Cada um irá produzir uma pasta nova que dentro dela possuiu um arquivo HTML que abre a pagina do meme com os resultados dentro dela, dentro dela é possivel visulizar os motifs encontrados dentro das sequencias. Nesse trabalho, a ordem deixa mais confiavel a analise, mas é interessante ver os resultados das outras analises e ver a diferença entre os resultados. 
+Os motifs que foram encontradors no arquivo interseccion_genespromotores.fasta com ordem 3 foram esses.
+
+![image](https://github.com/syresbr/Genomica-e-Bioinformatica-2023-/assets/46944679/ba75035f-f65d-4ce2-afd8-54ad931a16ea)
+
+E no arquivo Intersecção_faire.fasta:
+
+![image](https://github.com/syresbr/Genomica-e-Bioinformatica-2023-/assets/46944679/c939fa71-a181-4a67-a1e9-02232b0993cf)
+
+
+Depois disso nos baixamos os motifs em formato `minimal meme` para poder ser usado no mast
 
 
 ### MAST
@@ -51,6 +64,9 @@ MAST procura por motifs gerados pelos MEME em um arquivo fasta para encontrar ou
 ```
 mast 
 ```
+
+![image](https://github.com/syresbr/Genomica-e-Bioinformatica-2023-/assets/46944679/1e33b71b-132d-4679-9d9a-bef90b475518)
+
 
 ### Tomtom
 
