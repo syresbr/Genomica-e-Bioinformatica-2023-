@@ -87,6 +87,14 @@ tomtom -no-ssc -oc tomtom_i_1 -verbosity 1 -min-overlap 5 -mi 1 -dist pearson -e
 tomtom -no-ssc -oc tomtom_i_2 -verbosity 1 -min-overlap 5 -mi 1 -dist pearson -evalue -thresh 10.0 Resultadosmeme/intersecção/RCGKCAKAACGTGSACATRT.meme JASPAR2024_CORE_plants_redundant_pfms_meme.txt 
 tomtom -no-ssc -oc tomtom_i_3 -verbosity 1 -min-overlap 5 -mi 1 -dist pearson -evalue -thresh 10.0 Resultadosmeme/intersecção/TKTGTGTGTGBKTAT.meme JASPAR2024_CORE_plants_redundant_pfms_meme.txt 
 ```
+Importante ter em mente o que cada argumento serve dentro da linha de comando. 
+`-no-ssc` não aplicar correção de pequenas amostras
+`-verbosity` definir a verbosidade
+`-min-overlap` o minimo de sobreposição entre amostra e o banco
+`-mi` Só usar motifs com o index especifico
+`-dist pearson` Escolher a metrica usada
+`-evalue` Usar o E-value ao inves do q-value
+`-thresh` qual o limite de significancia  
 
 Aqui está os resultados, em ordem:
 
